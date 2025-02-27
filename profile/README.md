@@ -21,3 +21,9 @@ How to reliably do this?
 - Main branch is special.
 - It should always work.
 - There should be a "release" for every version of the code actually deployed. (That makes it easier to know which commit to revert back to if there's a problem.)
+
+See also:
+
+- [Best practices for Django projects at BUL](https://github.com/Brown-University-Library/django_template_42_project)
+
+_This document is a draft & will be undergoing revisions._

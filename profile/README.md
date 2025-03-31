@@ -10,7 +10,7 @@
 
 **Keep private things out of the github code directory**
 
-* Things to keep out of code, and the github code directory:
+* _Keep out of code, and the github code directory:_
   - passwords
   - API keys
   - server paths
@@ -19,11 +19,11 @@
   - shell-scripts that set environmental variables
   - log-files (which can sometimes contain sensitive info)
 
-* Implementation: One common pattern is to have a "project_outer_directory" that contains these things (as well as the "project_code_directory"), and only commit the  "project_code_directory" to github. 
+* _Implementation:_ One common pattern is to have a "project_outer_directory" that contains these things (as well as the "project_code_directory"), and only commit the  "project_code_directory" to github. 
 
-* Utilize environment variables: Store sensitive information in environment variables, set outside of the git-directory and thus not able to be accidentally committed. All languages support common ways of doing this.
+* _Utilize environment variables:_ Store sensitive information in environment variables, set outside of the git-directory and thus not able to be accidentally committed. All languages support common ways of doing this.
  
-* Do not depend on the .gitignore file for security: Rather, get in the habit of thinking of the .gitignore file as keeping messy-unnecessary-cruft out of github (like virtual-environments or auto-compiled *.pyc files), not as basic security. Instead, keep the sensitive info out of the github directory in the first place.
+* _Do not depend on the .gitignore file for security:_ Rather, get in the habit of thinking of the .gitignore file as keeping messy-unnecessary-cruft out of github (like virtual-environments or auto-compiled *.pyc files), not as basic security. Instead, keep the sensitive info out of the github directory in the first place.
 
 ## Other recommended GitHub practices...
 * Include a README, preferably with an explanation of the repo's Purpose, Usage, and Installation

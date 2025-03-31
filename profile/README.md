@@ -1,21 +1,29 @@
 # Brown Library GitHub Best practices
+
 ## Security
 
-Main security message:
+### Main security message:
 
-*Never Commit Sensitive Information*: Avoid committing passwords, API keys, server paths, database-structure info (where reasonably possible), and other confidential data to your repository &mdash; even if the repository is private. 
+*Never Commit Sensitive Information* — even if the repository is private. 
 
-How to reliably do this?
+### How to reliably do this?
 
-Things to keep out of the github code directory:
-* Private settings
-* environmental-variable-shell-scripts
-* log-files (which can sometimes contain sensitive info).
+**Keep private things out of the github code directory**
 
-One common pattern is to have a "project_outer_directory" that contains these things (as well as the "project_code_directory"), and have that "project_code_directory" the one that gets committed to github. 
+* Things to keep out of the github code directory:
+  - passwords
+  - API keys
+  - server paths
+  - database-structure info (where reasonably possible)
+  - private settings
+  - shell-scripts that set environmental variables
+  - log-files (which can sometimes contain sensitive info)
 
-* Utilize Environment Variables: Store sensitive information in environment variables, which are not tracked in version control. Then load these from your code.
-* Do not depend on the .gitignore file for security: Rather, get in the habit of thinking of the .gitignore file as keeping messy-unnecessary-cruft out of github (like virtual-environments), not as basic security. Instead, keep the sensitive info out of the github directory in the first place.
+* Implementation: One common pattern is to have a "project_outer_directory" that contains these things (as well as the "project_code_directory"), and only commit the  "project_code_directory" to github. 
+
+* Utilize environment variables: Store sensitive information in environment variables, set outside of the git-directory and thus not able to be accidentally committed. All languages support common ways of doing this.
+ 
+* Do not depend on the .gitignore file for security: Rather, get in the habit of thinking of the .gitignore file as keeping messy-unnecessary-cruft out of github (like virtual-environments or auto-compiled *.pyc files), not as basic security. Instead, keep the sensitive info out of the github directory in the first place.
 
 ## Other recommended GitHub practices...
 * Include a README, preferably with an explanation of the repo's Purpose, Usage, and Installation

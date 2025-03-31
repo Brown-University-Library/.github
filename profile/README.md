@@ -10,7 +10,7 @@
 
 **Keep private things out of the github code directory**
 
-* Things to keep out of the github code directory:
+* Things to keep out of code, and the github code directory:
   - passwords
   - API keys
   - server paths

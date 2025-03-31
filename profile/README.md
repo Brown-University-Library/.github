@@ -3,7 +3,7 @@
 
 Main security message:
 
-Never Commit Sensitive Information: Avoid committing passwords, API keys, server paths, database-structure info (where reasonably possible), and other confidential data to your repository -- even if the repository is private. 
+Never Commit Sensitive Information: Avoid committing passwords, API keys, server paths, database-structure info (where reasonably possible), and other confidential data to your repository &mdash; even if the repository is private. 
 
 How to reliably do this?
 
@@ -14,12 +14,13 @@ How to reliably do this?
 
 ## Other recommended GitHub practices...
 - Include a README
-- Really helpful areas: Purpose, Usage, Installation
+- Really helpful areas in the README: Purpose, Usage, Installation
+- Make it clear which team at BUL "owns" the repo
 - Add a "Description"
 - Include "dependencies" in such a way that github can auto-scan them and notify you of vulnerabilities
-- If you have a dotenv with private info—as noted above it should not be in the repo—but it's useful to have a "sample_dotenv.txt" file for users to get a sense of what kind of info is required.
-- Main branch is special.
-- It should always work.
+- If you have a dotenv with private info &mdash; as noted above it should not be in the repo—but it's useful to have a "sample_dotenv.txt" file for users to get a sense of what kind of info is required.
+- Main branch is special:
+-- It should always work.
 - There should be a "release" for every version of the code actually deployed. (That makes it easier to know which commit to revert back to if there's a problem.)
 
 See also:

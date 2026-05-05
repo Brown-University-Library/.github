@@ -1,4 +1,6 @@
-# Brown Library GitHub Best practices
+Hello! We're cleaning up the BUL GitHub as best we can, and revoking access to repositories for folks who no longer work here or otherwise shouldn't have access. If we've made a mistake and removed you from a repository you should have access to, please get in touch and we'll get it sorted out.
+
+# Brown University Library GitHub Best Practices
 
 ## Security
 
